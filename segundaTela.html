@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>quiz de matemática</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="matematica.css">
+</head>
+
+<body>
+        
+        <h3 id="player1Name"></h3>
+            <h3 id="pontuacao"></h3>
+            <br>
+            <br>
+            <h3 id="player2Name"></h3>
+            <h3 id="pontuacao2"></h3>
+        <center>
+
+            <h1>QUIZ DE MATÉMATICA</h1>
+            <br>
+            <h1 id=TurnoPergunta></h1>
+            <h1 id="TurnoResposta"></h1>
+            <br>
+            <br>
+            <h4>Primeiro Número</h4>
+            <select id="primera">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <br>
+            <h4>Segundo Número</h4>
+            <select id="segunda">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <br>
+            <br>
+            <br>
+                <br>
+                
+        
+            <button onclick="Enviar()" id="enviar">Enviar conta</button>
+            <center>
+                
+    </div>
+    <div id="output">
+        <center>
+            <h4 id="conta"></h4>
+            <input id="respondendo" placeholder="coloque aqui o resultado da conta"></input>
+            <br>
+            <br>
+            <button onclick="Verificar()" id="verificar">Checar</button>
+        </center>
+    </div>
+
+    <h4 id="resultado"></h4>
+
+    <script src="game_page.js"></script>
+
+</body>
+
+</html>
